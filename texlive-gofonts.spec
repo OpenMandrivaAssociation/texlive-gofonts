@@ -1,6 +1,6 @@
 Name:		texlive-gofonts
 Version:	64358
-Release:	1
+Release:	2
 Summary:	GoSans and GoMono fonts with LaTeX support
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/gofonts
