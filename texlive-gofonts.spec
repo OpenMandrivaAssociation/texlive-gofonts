@@ -3,7 +3,7 @@ Version:	64358
 Release:	2
 Summary:	GoSans and GoMono fonts with LaTeX support
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/gofonts
+URL:		https://www.ctan.org/tex-archive/macros/latex/contrib/gofonts
 License:	other-free lppl
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/gofonts.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/gofonts.doc.r%{version}.tar.xz
