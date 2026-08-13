@@ -12,7 +12,8 @@ Source0:	https://mirrors.ctan.org/systems/texlive/tlnet/archive/gofonts.r%{tl_re
 Source1:	https://mirrors.ctan.org/systems/texlive/tlnet/archive/gofonts.doc.r%{tl_revision}.tar.xz
 BuildArch:	noarch
 BuildSystem:	texlive
-Provides:	texlive(%{tl_name}) = %{tl_revision}
+Requires:	texlive-tlpkg
+Provides:	texlive(%{tl_name}) = %{version}
 
 %description
 This package provides LaTeX, pdfLaTeX, XeLaTeX and LuaLaTeX support for
@@ -22,3 +23,10 @@ Regular, Medium, and Bold (with corresponding italics). GoMono is
 available in regular and bold, with italics. Notes on the design may be
 found at https://blog.golang.org/go-fonts.
 
+
+%install -a
+mkdir -p %{buildroot}%{_texmf_updmap_d}
+cat > %{buildroot}%{_texmf_updmap_d}/%{tl_name} <<'TL_DROPIN_EOF'
+# from gofonts:
+Map go.map
+TL_DROPIN_EOF
